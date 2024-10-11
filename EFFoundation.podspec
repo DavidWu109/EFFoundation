@@ -26,4 +26,8 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |core|
     core.source_files = 'EFFoundation/Core/**/*.{h,swift}'
   end
+  
+  s.dependency 'SwiftyAttributes'
+  s.dependency 'ReachabilitySwift'
+  
 end

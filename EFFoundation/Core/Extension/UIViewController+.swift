@@ -18,7 +18,7 @@ public extension UIViewController {
         return UIApplication.shared()?.keyWindow()?.rootViewController?.topViewController
     }
     
-    private var topViewController: UIViewController {
+    var topViewController: UIViewController {
         return self.presentedViewController?.topViewController
             ?? (self as? UITabBarController)?.selectedViewController?.topViewController
             ?? (self as? UINavigationController)?.visibleViewController?.topViewController
