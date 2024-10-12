@@ -89,6 +89,10 @@ public extension String {
 
 public extension String {
     
+    var clean: String {
+        return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    }
+    
     var trimming: String? {
         let trimWhitespacesAndNewlines: String = self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         return trimWhitespacesAndNewlines.isEmpty ? nil : trimWhitespacesAndNewlines

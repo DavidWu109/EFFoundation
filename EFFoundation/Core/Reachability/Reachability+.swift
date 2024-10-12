@@ -7,7 +7,6 @@
 
 #if os(iOS)
 import Foundation
-#if canImport(Reachability)
 import Reachability
 import CoreTelephony
 
@@ -110,5 +109,4 @@ public extension Reachability {
         return addresses.first
     }
 }
-#endif
 #endif
